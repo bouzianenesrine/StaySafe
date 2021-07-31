@@ -3,15 +3,20 @@
 	height: 200px;
 	border: 1px solid black;
 	margin: auto;
+	background-image: url(media/light\ mode\ background.jpg);
+	background-repeat: no-repeat;
+	background-size: 600px 200px;
 }
 
 #perso {
 	width: 50px;
 	height: 50px;
-	background-color: black;
+	/*background-color: black;*/
 	position: relative;
-	top: 150px;
-	left: 20px;
+	top: 90px;
+	left:  20px;
+	background-image: url(media/mask.png);
+	background-size: 50px 50px;
 }
 
 .jump {
@@ -19,42 +24,143 @@
 
 @keyframes jump {
 	0% {
-		top: 150px;
+		top: /*150px*/ 90px;
 	}
 
 	30% {
-		top: 130px;
+		top: /*130px*/ 70px;
 	}
 
 	50% {
-		top: 80px;
+		top: /*80px*/ 20px;
 	}
 
 	80% {
-		top: 130px;
+		top: /*130px*/ 70px;
 	}
 
 	100% {
-		top: 150px;
+		top: /*150px*/ 90px;
 	}
 }
 
 #covid {
-	width: 20px;
+	width: 40px;
 	height: 40px;
 	position: relative;
-	top: 110px;
+	top: 55px;
 	left: 580px;
-	background-color: blue;
+	/*background-color: blue;*/
 	animation: block 1s infinite linear;
+	background-image: url(media/coronavirus.png);
+	background-size: 40px 40px;
+	
 }
 
 @keyframes block {
 	0% {
-		left: 580px;
+		left: 600px;
 	}
 
 	100% {
 		left: 0px;
 	}
+}
+#score, #hscore{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+    text-align: end;
+	margin-right: 20px;
+	color: aliceblue;
+}
+/* --- Accueil --- */
+.main {
+	width: 600px;
+	height: 200px;
+	border: 1px solid black;
+	margin: auto;
+	background-image: url(media/3658058.jpg);
+	background-size: 300px 200px;
+	background-repeat: no-repeat;
+
+}
+
+.logo {
+	font-family: 'Staatliches', cursive;
+	font-style: italic;
+	font-size: 40px;
+	color: #acc055;
+	margin-top: 3px;
+	margin-left: 330px;
+}
+
+.choice {
+	font-family: 'Ubuntu', sans-serif;
+	/*font-size: 14px;*/
+	font-weight: bold;
+	width: 200px;
+	height: 151px;
+	margin-top: -8px;
+	margin-left: 300px;
+	
+}
+
+.char {
+	margin: 0;	
+}
+
+.mode {
+	
+}
+
+
+img {
+	width: 20px;
+	height: 20px;
+}
+
+.play {
+	width: 100px;
+	margin-top: -90px;
+	margin-left: 500px;
+}
+
+button {
+	color: aliceblue;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #acc055;
+	border: none;
+	border-radius: 50%;
+	padding: 12px 32px;
+}
+
+button:hover {
+	background-color: #ff406a;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.3 ease-in-out;
+}
+
+#characterChoice1:hover {
+	cursor: pointer;
+}
+
+#characterChoice2:hover {
+	cursor: pointer;
+}
+
+#modeChoice1:hover {
+	cursor: pointer;
+}
+
+#characterChoice1:hover {
+	cursor: pointer;
+}
+
+#modeChoice2:hover {
+	cursor: pointer;
 }
