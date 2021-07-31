@@ -3,7 +3,7 @@
 	height: 200px;
 	border: 1px solid black;
 	margin: auto;
-	background-image: /*url(media/dark\ mode\ background.jpg);*/url(media/light\ mode\ background.jpg);
+	background-image: url(media/dark\ mode\ background.jpg);
 	background-repeat: no-repeat;
 	background-size: 600px 200px;
 }
@@ -15,7 +15,7 @@
 	position: relative;
 	top: 50px;
 	left:  20px;
-	background-image: url(media/persoH.png)/*url(media/persoH.png)*/;
+	background-image: url(media/persoF.png)/*url(media/persoH.png)*/;
 	background-size: 100px 100px;
 }
 
